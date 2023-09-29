@@ -48,7 +48,7 @@ const Login = () => {
             placeholder="password"
             required
           />
-          <div align="center">
+          <div className="center">
             <button type="submit" className="button">
               <span>LOGIN</span>
             </button>
