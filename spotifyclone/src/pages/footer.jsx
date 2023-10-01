@@ -9,9 +9,11 @@ import ShuffleIcon from "@mui/icons-material/Shuffle";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
 import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
-import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
-import "./Footer.css";
-import { Grid, Slider } from "@material-ui/core";
+import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
+import "../styles/footer.css";
+import Grid from "@mui/material/Grid";
+import Slider from "@mui/material/Slider";
+
 
 function Footer({ spotify }) {
   const [{ token, item, playing }, dispatch] = useStateValue();
