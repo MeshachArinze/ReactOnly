@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import "./Header.css";
-import { useStateValue } from "./StateProvider";
+import "../styles/header.css";
+import { useStateValue } from "../provider/state_provider";
 import Avatar from "@mui/material/Avatar";
 import SearchIcon from "@mui/icons-material/Search";
 
