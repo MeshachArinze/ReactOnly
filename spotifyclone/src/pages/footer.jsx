@@ -8,7 +8,7 @@ import SkipNextIcon from "@material-ui/icons/SkipNext";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
 import RepeatIcon from "@mui/icons-material/Repeat";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
-import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline";
+import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import "./Footer.css";
 import { Grid, Slider } from "@material-ui/core";
