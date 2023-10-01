@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import "./Header.css";
 import { useStateValue } from "./StateProvider";
-import { Avatar } from "@material-ui/core";
+import Avatar from "@mui/material/Avatar";
 import SearchIcon from "@material-ui/icons/Search";
 
 function Header({ spotify }) {
