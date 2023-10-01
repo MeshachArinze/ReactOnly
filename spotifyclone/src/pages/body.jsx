@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import "./Body.css";
+import "../styles/body.css";
 import Header from "./header";
 import { useStateValue } from "../provider/state_provider";
-import SongRow from "./SongRow";
+import SongRow from "../components/song_row";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
