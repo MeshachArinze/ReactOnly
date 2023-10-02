@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./MealDetailsPage.scss";
@@ -16,7 +15,7 @@ const MealDetailsPage = () => {
 
   useEffect(() => {
     startFetchSingleMeal(dispatch, id);
-  }, [id]);
+  }, [id, dispatch]);
 
   let ingredientsArr = [],
     measuresArr = [],

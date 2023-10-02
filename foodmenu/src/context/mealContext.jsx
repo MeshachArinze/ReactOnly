@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import { mealReducer } from "../reducers/mealReducer";
 import { startFetchCategories } from "../actions/mealsActions";
 
@@ -18,7 +18,7 @@ const initialState = {
   mealError: false,
 };
 
-const MealContext = createContext({});
+export const MealContext = createContext({});
 export const MealProvider = ({ children }) => {
   const [state, dispatch] = useReducer(mealReducer, initialState);
 
@@ -39,6 +39,4 @@ export const MealProvider = ({ children }) => {
   );
 };
 
-export const useMealContext = () => {
-  return useContext(MealContext);
-};
+

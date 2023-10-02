@@ -1,5 +1,6 @@
+
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useReducer } from "react";
+import { createContext,  useReducer } from "react";
 import reducer from "../reducers/sidebarReducer";
 import { OPEN_SIDEBAR, CLOSE_SIDEBAR } from "../actions/actions";
 
@@ -7,7 +8,7 @@ const initialState = {
   isSidebarOpen: false,
 };
 
-const SidebarContext = createContext({});
+export const SidebarContext = createContext({});
 
 export const SidebarProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -33,6 +34,3 @@ export const SidebarProvider = ({ children }) => {
   );
 };
 
-export const useSidebarContext = () => {
-  return useContext(SidebarContext);
-};
