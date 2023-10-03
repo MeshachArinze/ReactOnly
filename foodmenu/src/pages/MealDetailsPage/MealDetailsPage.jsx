@@ -4,14 +4,14 @@ import { useParams } from "react-router-dom";
 import "./MealDetailsPage.scss";
 import CategoryList from "../../components/Category/CategoryList";
 import MealSingle from "../../components/Meal/MealSingle";
-import { useMealContext } from "../../context/mealContext";
+import UseMealContext from "../../context/useMealContent";
 import { startFetchSingleMeal } from "../../actions/mealsActions";
 import Loader from "../../components/Loader/Loader";
 
 const MealDetailsPage = () => {
   const { id } = useParams();
   const { categories, dispatch, meal, categoryLoading, mealLoading } =
-    useMealContext();
+    UseMealContext();
 
   useEffect(() => {
     startFetchSingleMeal(dispatch, id);

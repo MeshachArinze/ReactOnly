@@ -1,13 +1,12 @@
-
-import { useSidebarContext } from '../../context/sidebarContext';
+import UseSidebarContext from '../../context/useSidebarContext';
 import { ImCancelCircle} from "react-icons/im";
 import "./Sidebar.scss";
 import { Link } from "react-router-dom";
-import { useMealContext } from '../../context/mealContext';
+import UseMealContext  from '../../context/useMealContent';
 
 const Sidebar = () => {
-    const { isSidebarOpen, closeSidebar} = useSidebarContext();
-    const { categories } = useMealContext();
+    const { isSidebarOpen, closeSidebar} = UseSidebarContext();
+    const { categories } = UseMealContext();
 
     return (
         <nav className={`sidebar ${isSidebarOpen ? 'sidebar-visible' : ""}`}>

@@ -2,7 +2,7 @@
 import  {useState} from 'react';
 import "./Header.scss";
 import { BsSearch } from "react-icons/bs";
-import { useMealContext } from '../../context/mealContext';
+import  UseMealContext from '../../context/useMealContent';
 import { useNavigate } from 'react-router-dom';
 import { startFetchMealsBySearch } from '../../actions/mealsActions';
 
@@ -10,7 +10,7 @@ const SearchForm = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
-  const { dispatch, meals } = useMealContext();
+  const { dispatch, meals } = UseMealContext();
 
   const handleSearchTerm = (e) => {
     e.preventDefault();
