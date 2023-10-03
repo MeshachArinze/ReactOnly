@@ -1,13 +1,13 @@
 import {useEffect} from 'react';
 import "./CategoryPage.scss";
-import { useMealContext } from '../../context/mealContext';
+import UseMealContext  from '../../context/useMealContent';
 import MealList from '../../components/Meal/MealList';
 import { useParams } from 'react-router-dom';
 import { startFetchMealByCategory } from '../../actions/mealsActions';
 
 const CategoryPage = () => {
   const {name} = useParams();
-  const { categoryMeals, dispatch, categories } = useMealContext();
+  const { categoryMeals, dispatch, categories } = UseMealContext();
   let catDescription = "";
 
   if(categories){

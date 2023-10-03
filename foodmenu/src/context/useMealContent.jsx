@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { MealContext } from "./mealContext";
 
-export const useMealContext = () => {
+const UseMealContext = () => {
   return useContext(MealContext);
 };
+
+export default UseMealContext;
