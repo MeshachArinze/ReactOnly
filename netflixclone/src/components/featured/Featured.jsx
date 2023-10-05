@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+import InfoIcon from "@mui/icons-material/Info";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import "./featured.scss";
 
 export default function Featured({ type }) {
@@ -43,11 +44,11 @@ export default function Featured({ type }) {
         </span>
         <div className="buttons">
           <button className="play">
-            <PlayArrow />
+            <PlayArrowIcon />
             <span>Play</span>
           </button>
           <button className="more">
-            <InfoOutlined />
+            <InfoIcon />
             <span>Info</span>
           </button>
         </div>
