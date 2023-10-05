@@ -1,4 +1,6 @@
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import "./navbar.scss";
 
@@ -24,15 +26,15 @@ const Navbar = () => {
           <span>My List</span>
         </div>
         <div className="right">
-          <Search className="icon" />
+          <SearchIcon className="icon" />
           <span>KID</span>
-          <Notifications className="icon" />
+          <NotificationsIcon className="icon" />
           <img
             src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt=""
           />
           <div className="profile">
-            <ArrowDropDown className="icon" />
+            <ArrowDownwardIcon className="icon" />
             <div className="options">
               <span>Settings</span>
               <span>Logout</span>
