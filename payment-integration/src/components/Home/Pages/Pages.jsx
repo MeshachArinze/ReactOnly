@@ -47,9 +47,9 @@ const Pages = () => {
       </div>
       <div className="bg-gradient-to-r from-blue-500 to-cyan-400 h-auto flex   md:justify-end">
         <div className="flex flex-col m-auto w-[500px] gap-8 mr-8">
-          <h2 className="text-center text-lightWhite">Let's Talk?</h2>
+          <h2 className="text-center text-lightWhite">Let Talk?</h2>
           <p className="p-4 text-lightWhite font-semibold text-lg">
-            Fill your form and let's discuss the strategies to make your project
+            Fill your form and let discuss the strategies to make your project
             stand out from the circle.
           </p>
           <div className="flex flex-col  max-w-[100%] m-auto">

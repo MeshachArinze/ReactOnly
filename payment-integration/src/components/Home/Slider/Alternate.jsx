@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { icons } from "../../../data";
@@ -49,7 +50,7 @@ function App() {
     return () => {
       clearInterval(slider);
     };
-  }, [index]);
+  }, [index, people.length]);
 
   return (
     <section className="section bg-gradient-to-r from-violet-500 to-fuchsia-500">

@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useSpring, animated } from "react-spring";
+
 import { FaAward, FaFirstAid, FaTrophy } from "react-icons/fa";
 
 const Testimonial = ({ images }) => {
