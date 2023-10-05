@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./listItem.scss";
-import {
-  PlayArrow,
-  Add,
-  ThumbUpAltOutlined,
-  ThumbDownOutlined,
-} from "@material-ui/icons";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import AddIcon from "@mui/icons-material/Add";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import ThumbDownAltIcon from "@mui/icons-material/ThumbDownAlt";
 import { useState } from "react";
 
 export default function ListItem({ index }) {
@@ -27,10 +26,10 @@ export default function ListItem({ index }) {
           <video src={trailer} autoPlay={true} loop />
           <div className="itemInfo">
             <div className="icons">
-              <PlayArrow className="icon" />
-              <Add className="icon" />
-              <ThumbUpAltOutlined className="icon" />
-              <ThumbDownOutlined className="icon" />
+              <PlayArrowIcon className="icon" />
+              <AddIcon className="icon" />
+              <ThumbUpAltIcon className="icon" />
+              <ThumbDownAltIcon className="icon" />
             </div>
             <div className="itemInfoTop">
               <span>1 hour 14 mins</span>

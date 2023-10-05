@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { ArrowBackOutlined } from "@material-ui/icons";
 import "./watch.scss";
 
