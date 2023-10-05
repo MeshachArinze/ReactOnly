@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { InfoOutlined, PlayArrow } from "@material-ui/icons";
 import "./featured.scss";
 
