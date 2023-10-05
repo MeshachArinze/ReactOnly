@@ -1,10 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./listItem.scss";
-import {
-  PlayArrow,
-  Add,
-  ThumbUpAltOutlined,
-  ThumbDownOutlined,
-} from "@material-ui/icons";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import AddIcon from "@mui/icons-material/Add";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import ThumbDownAltIcon from "@mui/icons-material/ThumbDownAlt";
 import { useState } from "react";
 
 export default function ListItem({ index }) {
