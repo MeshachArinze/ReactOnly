@@ -1,0 +1,21 @@
+:root {
+  --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+
+.about {
+  background-image: url(https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?cs=srgb&dl=pexels-caio-67112.jpg&fm=jpg)  , url(https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg ) , url(https://images.pexels.com/photos/1204148/pexels-photo-1204148.jpeg?cs=srgb&dl=pexels-sam-nam-1204148.jpg&fm=jpg) ;
+    background-size: 125%;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;
+    font-family: var(--font);
+    height: 100%;
+  
+}
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 50% 0; }
+    100% { background-position: 0 0; }
+}
+
