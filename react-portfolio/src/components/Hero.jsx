@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-import Heroimg from "../images/hero-img.png";
+import Heroimg from "../images/meshach.jpg";
 import CVpdf from "../images/CV_Ojo_Patrick_Duke.pdf";
 
 const Hero = () => {
@@ -11,24 +11,24 @@ const Hero = () => {
           <p className="text-[#38AFC7] font-bold ">Welcome to My world</p>
           <div className="md:flex-col">
             <h1 className="lg:text-7xl md:text-6xl text-5xl font-bold lg:py-4 ">
-              I'm
+              Am
             </h1>
             <p className="lg:text-5xl md:text-4xl text-3xl font-bold md:py-3 md:pb-5 text-[#4ADE80]  "> 
-              Ojo Patrick Duke
+              Meshach (Ekene) Arinze
             </p>
             <Typed
               className="lg:text-3xl md:text-3xl text-3xl font-bold md:py-3 md:pb-5 text-white  "
-              strings={["a Blockchain Developer", "a Remote Sensing Researcher", "a GIS Specialist"]}
+              strings={["a Software Developer", "a Frontend engineer", "a Frontendui engineer"]}
               typeSpeed={70}
               backSpeed={30}
               loop
             />
           </div>
           <p className="text-[#38AFC7] text-sm font-bold pt-2">
-           Hello! I'm Patrick.
-           Blockchain Developer and Teacher from Lagos, Nigeria.
-           Building smart contracts,learning new things.
-           I'm very glad indeed to connect with you!
+           Hello! Am Meshach (Ekene) Arinze.
+           Software Developer from Delta, Nigeria.
+           Building Web Design, development, and Deployment,learning new things.
+           Am very glad indeed to connect with you!
           </p>
           <button
             type="button"

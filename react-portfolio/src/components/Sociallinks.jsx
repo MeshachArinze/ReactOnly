@@ -11,7 +11,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/ojo-patrick-duke-1a30a365/",
+      href: "https://www.linkedin.com/in/meshach-ekene/",
       style: "rounded-tr-md",
     },
     {
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/dukepat",
+      href: "https://github.com/MeshachArinze",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:dukepato2010@gmail.com", 
+      href: "meshacharinze@gmail.com", 
     },
   ];
 

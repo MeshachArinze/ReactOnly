@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Contact = () => {
   return (
     <div name="Contact" className="w-full h-screen text-white mt-40">

@@ -12,23 +12,22 @@ const About = () => {
 
         <p className="text-xl mt-10 hover:scale-110 duration-300">
           Who Am I?
-          I am a Blockchain Developer from Lagos, Nigeria
-          I have spent the last 2 years building smart contracts and full dapps. 
-          I have always had a knack for technology and working with computer programs.
-          I also proud myself in knowledge of python and cloud technologies like AWS at advanced levels.  
+          I am a Software Developer from Delta, Nigeria.
+          I have spent the last 3 years building web design, development and deployment. 
+          I  always had a knack for technology and working with computer programs.
+          I also proud myself in knowledge of TypeScript and cloud technologies like AWS at advanced levels.  
         </p>
         <br />
         <p className="text-xl mt-2 hover:scale-110 duration-300">
-          My love for programming dates back to 2003 when I first had my hands on QBasic.
+          My love for programming dates back to 2019 when I first had my hands on C++.
           This interest was further fired up when I started playing with web technologies like HTML, CSS and Javascript.
           I am now expanding my learning of Javascript and building web3 projects with ReactJs, NextJs and learning new technologies.
         </p>
 
         <br />
         <p className="text-xl mt-2 hover:scale-110 duration-300 mb-80">
-          Don't get it twisted, I am a trained GIS and Remote sensing specialist and graduated as a historical topper (9.92/10 CGPA).
-          My MSc Geoinformatics program gave me more opportunity to get familiar with python, javascript and other technologies.
-          Aside my core web3 development activities, I sometime carry out research activities on ML application for remote sensing.
+          Do it get it twisted, I am a certified cloud technologist from coursera
+          Aside my core web2 development activities, I sometime carry out research activities on cloud technologies.
         </p>
       </div>
     </div>
