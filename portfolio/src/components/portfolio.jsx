@@ -1,10 +1,10 @@
-import React from 'react'
-import Worldleclone from "../images/wordleclone.png";
-import Hoolix from "../images/hoolix.png";
-import Airbnb from "../images/airbnb.png";
-import Sportify from "../images/sportify.png";
-import Feedback from "../images/feedback.png";
-import Exchange from "../images/payment.png";
+
+import Whitelist from "../images/Whitelist.PNG";
+import Collection from "../images/NFT_Collection.PNG";
+import ICO from "../images/ico.PNG";
+import Gallery from "../images/NFT_Gallery.PNG";
+import DAO from "../images/dao.PNG";
+import Exchange from "../images/exchange.PNG";
 
 const Portfolio = () => {
   return (
@@ -21,18 +21,18 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-3 gap-10 px-14">
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://wordleclone-lilac.vercel.app/"
+              href="https://whitelistd-app-dukepat.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={Worldleclone}
+                src={Whitelist}
                 alt=""
                 className="rounded-xl duration-200 hover:scale-105"
               />
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  Worldleclone
+                  NFT/Crypto Whitelist App
                 </button>
               </div>
             </a>
@@ -40,18 +40,18 @@ const Portfolio = () => {
 
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://magnificent-licorice-22858b.netlify.app/"
+              href="https://cryptodevs-nft-collection-dukepat.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={Hoolix}
+                src={Collection}
                 alt=""
                 className="rounded-xl duration-200 hover:scale-105"
               />
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  AAgency Landing Page
+                  NFT Collection App
                 </button>
               </div>
             </a>
@@ -59,18 +59,18 @@ const Portfolio = () => {
 
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://airbnbclone-rosy.vercel.app/"
+              href="https://crypto-dev-ico-dukepat.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={Airbnb}
+                src={ICO}
                 alt=""
                 className="rounded-xl duration-200 hover:scale-105"
               />
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  Airbnb Clone
+                  Initial Coin Offering (ICO) App
                 </button>
               </div>
             </a>
@@ -78,18 +78,18 @@ const Portfolio = () => {
 
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://spotifyclone-git-master-meshacharinze.vercel.app/"
+              href="https://nft-gallery-dukepat.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={Sportify}
+                src={Gallery}
                 alt=""
                 className="rounded-xl duration-200 hover:scale-105"
               />
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  Sportify Clone
+                  NFT Gallery App
                 </button>
               </div>
             </a>
@@ -97,19 +97,19 @@ const Portfolio = () => {
 
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://react-only.vercel.app/"
-              target="_blank"
+              href="https://dukedao-project-dukepat.vercel.app/"
               rel="noreferrer"
+              target="_blank"
             >
               <img
-                src={Feedback}
+                src={DAO}
                 alt=""
                 className="rounded-xl duration-200 hover:scale-105"
               />
 
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  Feedback App
+                  DAO App
                 </button>
               </div>
             </a>
@@ -117,7 +117,7 @@ const Portfolio = () => {
 
           <div className="shadow-2xl shadow-[#1E293B] rounded-xl">
             <a
-              href="https://651f1d8c64de0300907a6a31--graceful-empanada-d6ae4c.netlify.app/"
+              href="https://defi-exchange-dukepat.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -129,7 +129,7 @@ const Portfolio = () => {
 
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  payment app
+                  Crypto Exchange App
                 </button>
               </div>
             </a>
