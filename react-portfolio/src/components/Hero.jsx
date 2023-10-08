@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import Heroimg from "../images/meshach.jpg";
-import CVpdf from "../images/CV_Ojo_Patrick_Duke.pdf";
+import CVpdf from "../images/resume_ekene.pdf";
 
 const Hero = () => {
   return (
