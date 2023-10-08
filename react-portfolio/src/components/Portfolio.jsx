@@ -1,7 +1,7 @@
 import React from 'react'
 import Worldleclone from "../images/wordleclone.png";
-import Hoolix from "../images/hoolix.png";
-import Airbnb from "../images/airbnb.png";
+import Hoolix from "../images/magnificent-licorice.png";
+import Airbnb from "../images/airbnbclone-rosy.png";
 import Sportify from "../images/sportify.png";
 import Feedback from "../images/feedback.png";
 import Exchange from "../images/payment.png";
@@ -51,7 +51,7 @@ const Portfolio = () => {
               />
               <div className="flex justify-center items-center">
                 <button className="px-6 py-3 m-4 duration-200 hover:scale-105 font-bold text">
-                  AAgency Landing Page
+                  Agency Landing Page
                 </button>
               </div>
             </a>
