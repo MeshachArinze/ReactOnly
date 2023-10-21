@@ -1,14 +1,14 @@
 import React from "react";
 import Typed from "react-typed";
 import Heroimg from "../images/meshach.jpg";
-import CVpdf from "../images/CV_Ojo_Patrick_Duke.pdf";
+import CVpdf from "../images/resume_ekene.pdf";
 
 const Hero = () => {
   return (
     <div className="text-white">
       <div className="max-w-[1000px] w-full h-screen mt-24 mx-auto flex justify-center text-left p-4 flex-col md:flex-row items-center md:mt-[-96px] md:p-0">
         <div className="p-3 md:flex-col md:mr-20">
-          <p className="text-[#38AFC7] font-bold ">Welcome to My world</p>
+          <p className="text-[#38AFC7] font-bold ">Welcome to My world !</p>
           <div className="md:flex-col">
             <h1 className="lg:text-7xl md:text-6xl text-5xl font-bold lg:py-4 ">
               Am
