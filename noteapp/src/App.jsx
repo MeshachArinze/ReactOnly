@@ -1,4 +1,4 @@
-import "./styles/App.css"
+import "./styles/App.css";
 
 import { NotesContext } from "./context";
 import NoteList from "./components/note_list";
@@ -6,7 +6,7 @@ import useNotes from "./hooks/useNotes";
 import Menu from "./components/menu";
 
 function App() {
-   const contextValue = useNotes();
+  const contextValue = useNotes();
   // const { notesData, notesDataError, createNote, updateNote, deleteNote } =
   //   useNotes();
 
@@ -17,14 +17,14 @@ function App() {
   //   return <div className="container">...loading</div>;
   // }
 
-    if (contextValue.notesDataError) {
-      return (
-        <div className="container">error: {contextValue.notesDataError}</div>
-      );
-    }
-    if (!contextValue.notesData) {
-      return <div className="container">...loading</div>;
-    }
+  if (contextValue.notesDataError) {
+    return (
+      <div className="container">error: {contextValue.notesDataError}</div>
+    );
+  }
+  if (!contextValue.notesData) {
+    return <div className="container">...loading</div>;
+  }
 
   //  function createNoteFn() {
   //    const timeOfDay = new Date().toLocaleTimeString("en", {
