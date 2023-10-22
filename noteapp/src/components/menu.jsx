@@ -1,6 +1,23 @@
 import PropTypes from "prop-types";
 
-function Menu({ createNoteFn }) {
+import { NotesContext } from "../context";
+import { useContext } from "react";
+
+function Menu() {
+  const { createNote } = useContext(NotesContext);
+
+  function createNoteFn() {
+    const timeOfDay = new Date().toLocaleTimeString("en", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+    createNote(
+      `Note at ${timeOfDay}`,
+      `This sample note created at ${timeOfDay}`
+    );
+  }
+
   return (
     <ul className="nav nav-pills p-3 bg-white mb-3 founded-pill align-items-center">
       <li className="nav-item ml-auto">

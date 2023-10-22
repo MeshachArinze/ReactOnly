@@ -1,8 +1,12 @@
 import PropTypes from "prop-types"
 
 import NoteCard from "./note_card.jsx";
+import { useContext } from "react";
+import { NotesContext } from "../context";
 
-function NoteList({ notesData }) {
+function NoteList() {
+  const { notesData } = useContext(NotesContext);
+
   function sortByDate(a, b) {
     const dateA = a.createDate;
     const dateB = b.createDate;
@@ -20,5 +24,8 @@ function NoteList({ notesData }) {
 
 NoteList.propTypes = {
   notesData: PropTypes.array,
-};
+  updateNote: PropTypes.func,
+  deleteNote: PropTypes.func
+}
+
 export default NoteList;
