@@ -2,20 +2,21 @@ import PropTypes from "prop-types";
 
 import { NotesContext } from "../context";
 import { useContext } from "react";
+import { NotesModalContext } from "../App";
 
 function Menu() {
-  const { createNote } = useContext(NotesContext);
+  const {
+    setModalNoteId,
+    setModalNoteTitle,
+    setModalNoteDescription,
+    setModalShow,
+  } = useContext(NotesModalContext);
 
   function createNoteFn() {
-    const timeOfDay = new Date().toLocaleTimeString("en", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-    });
-    createNote(
-      `Note at ${timeOfDay}`,
-      `This sample note created at ${timeOfDay}`
-    );
+    setModalNoteId(0);
+    setModalNoteTitle("");
+    setModalNoteDescription("");
+    setModalShow(true);
   }
 
   return (
@@ -33,6 +34,7 @@ function Menu() {
     </ul>
   );
 }
+
 
 Menu.propTypes = {
   createNoteFn: PropTypes.func,

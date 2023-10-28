@@ -1,21 +1,31 @@
-import "./styles/App.css";
-
-import { NotesContext } from "./context";
 import NoteList from "./components/note_list";
 import useNotes from "./hooks/useNotes";
+import useNotesModal from "./hooks/useNotesModal";
 import Menu from "./components/menu";
+import { createContext } from "react";
+
+export const NotesContext = createContext({
+  notesData: [],
+  notesDataError: "",
+  createNote: () => {},
+  updateNote: () => {},
+  deleteNote: () => {},
+});
+
+export const NotesModalContext = createContext({
+  modalShow: false,
+  setModalShow: () => {},
+  modalNoteId: 0,
+  setModalNoteId: () => {},
+  modalTitle: "",
+  setModalTitle: () => {},
+  modalDescription: "",
+  setModalDescription: () => {},
+});
 
 function App() {
   const contextValue = useNotes();
-  // const { notesData, notesDataError, createNote, updateNote, deleteNote } =
-  //   useNotes();
-
-  // if (notesDataError) {
-  //   return <div className="container">error: {notesDataError}</div>;
-  // }
-  // if (!notesData) {
-  //   return <div className="container">...loading</div>;
-  // }
+  const contextValueNotesModal = useNotesModal();
 
   if (contextValue.notesDataError) {
     return (
@@ -26,23 +36,13 @@ function App() {
     return <div className="container">...loading</div>;
   }
 
-  //  function createNoteFn() {
-  //    const timeOfDay = new Date().toLocaleTimeString("en", {
-  //      hour: "2-digit",
-  //      minute: "2-digit",
-  //      second: "2-digit",
-  //    });
-  //    createNote(
-  //      `Note at ${timeOfDay}`,
-  //      `This sample note created at ${timeOfDay}`
-  //    );
-  //  }
-
   return (
     <div className="container">
       <NotesContext.Provider value={contextValue}>
-        <Menu />
-        <NoteList />
+        <NotesModalContext.Provider value={contextValueNotesModal}>
+          <Menu />
+          <NoteList />
+        </NotesModalContext.Provider>
       </NotesContext.Provider>
     </div>
   );
